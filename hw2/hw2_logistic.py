@@ -76,7 +76,7 @@ def gradient_descent( one_x , y , repeat ):
     tot=np.zeros((dim, 1 ))
     lamda=0.1 
     for T in range(repeat):
-        if(T% 1 == 0 ):
+        #if(T% 1 == 0 ):
             #print("T=",T)
             #print("acc: ",accu(answer(func(one_x,theta)),y),"loss:",float(loss(one_x,y,theta)))
         add=( np.transpose(one_x).dot(y-func(one_x,theta)))
