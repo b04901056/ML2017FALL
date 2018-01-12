@@ -30,7 +30,7 @@ eigonvector = u.T
 #print('reconstruct ...')
 
 
-picked_img = imread(sys.argv[2])  
+picked_img = imread(os.path.join(sys.argv[1],sys.argv[2]))  
 X = picked_img.flatten()
 X -= X_mean
 weight = np.array([X.T.dot(eigonvector[i]) for i in range(415)]) 
